@@ -1,6 +1,6 @@
 <div class="ng-otp-input-wrapper wrapper {{config.containerClass}}" id="c_{{componentKey}}" *ngIf="otpForm?.controls"
   [ngStyle]="config.containerStyles">
-  <input (paste)="handlePaste($event)" [pattern]="config.allowNumbersOnly ? '\\d*' : ''" [type]="inputType"  [placeholder]="config?.placeholder || ''"
+  <input (paste)="handlePaste($event)" [inputmode]="config.allowNumbersOnly ? 'numeric' : ''" [pattern]="config.allowNumbersOnly ? '\\d*' : ''" [type]="inputType"  [placeholder]="config?.placeholder || ''"
     [ngStyle]="config.inputStyles" 
     class="otp-input {{config.inputClass}}" autocomplete="one-time-code" *ngFor="let item of otpForm?.controls | keys;let i=index"
     [formControl]="otpForm.controls[item]" #inp [id]="getBoxId(i)" 
