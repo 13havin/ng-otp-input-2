@@ -1,6 +1,6 @@
 {
-  "name": "ng-otp-input-repo",
-  "version": "1.9.2",
+  "name": "ng-otp-input-2",
+  "version": "1.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
